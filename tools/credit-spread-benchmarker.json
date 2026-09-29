@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "benchmark_credit_spread",
+  "description": "Spreads interest margin against SOFR baseline according to borrower risk tier",
+  "type": "object",
+  "properties": {
+    "risk_tier_json": {
+      "type": "string",
+      "description": "JSON with risk_tier (A, B, C) and sofr_rate"
+    }
+  },
+  "required": [
+    "risk_tier_json"
+  ]
+}

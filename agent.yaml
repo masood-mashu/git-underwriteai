@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: "git-underwriteai"
+version: "0.1.0"
+description: "Autonomous Commercial Lending Underwriting, DSCR Liquidity & Credit Risk Evaluation Agent"
+framework: "opengap"
+authors:
+  - name: "masood-mashu"
+    email: "masoodmashu03@gmail.com"
+license: "Apache-2.0"
+
+runtime:
+  language: "python"
+  version: ">=3.10"
+  timeout: 120
+
+tags:
+  - finance
+  - commercial-lending
+  - credit-risk
+  - dscr-calculation
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-underwriteai-01"
+  passport_category: "Finance"

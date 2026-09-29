@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "calculate_dscr",
+  "description": "Calculates Debt Service Coverage Ratio from Net Operating Income and annual debt service",
+  "type": "object",
+  "properties": {
+    "financials_json": {
+      "type": "string",
+      "description": "JSON with noi_usd and annual_debt_service_usd"
+    }
+  },
+  "required": [
+    "financials_json"
+  ]
+}

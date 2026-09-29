@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "evaluate_ltv_risk",
+  "description": "Calculates Loan-to-Value percentage against certified collateral appraisal",
+  "type": "object",
+  "properties": {
+    "collateral_json": {
+      "type": "string",
+      "description": "JSON with loan_amount_usd and appraised_value_usd"
+    }
+  },
+  "required": [
+    "collateral_json"
+  ]
+}

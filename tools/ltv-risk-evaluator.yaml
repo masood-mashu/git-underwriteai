@@ -1,0 +1,14 @@
+name: "ltv-risk-evaluator"
+description: "Calculates Loan-to-Value percentage against certified collateral appraisal"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "ltv_risk_evaluator.py"
+parameters:
+  type: "object"
+  properties:
+    collateral_json:
+      type: "string"
+      description: "JSON with loan_amount_usd and appraised_value_usd"
+  required:
+    - "collateral_json"

@@ -1,0 +1,14 @@
+name: "credit-spread-benchmarker"
+description: "Spreads interest margin against SOFR baseline according to borrower risk tier"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "credit_spread_benchmarker.py"
+parameters:
+  type: "object"
+  properties:
+    risk_tier_json:
+      type: "string"
+      description: "JSON with risk_tier (A, B, C) and sofr_rate"
+  required:
+    - "risk_tier_json"
