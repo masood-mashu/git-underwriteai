@@ -1,14 +1,18 @@
-name: "dscr-liquidity-calculator"
+name: dscr-liquidity-calculator
+version: 1.0.0
 description: "Calculates Debt Service Coverage Ratio from Net Operating Income and annual debt service"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "dscr_liquidity_calculator.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     financials_json:
-      type: "string"
+      type: string
       description: "JSON with noi_usd and annual_debt_service_usd"
   required:
-    - "financials_json"
+    - financials_json
+implementation:
+  type: script
+  path: dscr_liquidity_calculator.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true
